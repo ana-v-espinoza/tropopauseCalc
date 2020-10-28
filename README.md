@@ -2,10 +2,11 @@
 Working on Issue #1324 on Unidata's Metpy repo:
 https://github.com/Unidata/MetPy/issues/1324
 
-#### Citations
+### Citations  
 
+Citations found in the document `checkpoint1_ZR_LB_RE_ipynb` found in this repo
 
-#### Relevant Links
+### Relevant Links
 **NCAR Command Language (NCL) documentation for tropopause calculation:**  
 `https://www.ncl.ucar.edu/Document/Functions/Built-in/trop_wmo.shtml`
 
