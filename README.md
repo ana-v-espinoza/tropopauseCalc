@@ -2,9 +2,14 @@
 Working on Issue #1324 on Unidata's Metpy repo:
 https://github.com/Unidata/MetPy/issues/1324
 
+### Authors 
+
+Lydia M. Bunting, Roberto Espinoza Jr., Zyanya Ramirez-Diaz, with special thanks
+to Dr. Eric Bruning for valuable input 
+
 ### Summary
 
-#### Methodology
+### Methodology
 Two methods are implemented to calculate the tropopause from sounding data.
 Similarly to other MetPy sounding functions, these methods take two pint.Quanity
 objects, pressure and temperature, as function arguments. Both methods use the
