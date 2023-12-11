@@ -4,14 +4,14 @@ https://github.com/Unidata/MetPy/issues/1324
 
 ### Authors 
 
-Lydia M. Bunting, Roberto Espinoza Jr., Zyanya Ramirez-Diaz, with special thanks
+Lydia M. Bunting, Ana Victoria Espinoza, Zyanya Ramirez-Diaz, with special thanks
 to Dr. Eric Bruning for valuable input 
 
 ### Summary
 
 ### Methodology
 Two methods are implemented to calculate the tropopause from sounding data.
-Similarly to other MetPy sounding functions, these methods take two pint.Quanity
+Similarly to other MetPy sounding functions, these methods take two `pint.Quanity`
 objects, pressure and temperature, as function arguments. Both methods use the
 WMO definition for tropopause height: 
 
@@ -19,7 +19,7 @@ WMO definition for tropopause height:
 The lowest level at which the lapse rate decreases to $2 \frac{K}{km}$ or
 less, provided also the average lapse rate between this level and all higher
 levels within 2 kilometers does not exceed $2 \frac{K}{km}.
-``` 
+```
 
 The first method is based on the tropopause calculation code written in Fortran
 for NCL (NCAR Command Language), which applies a forward difference to determine
@@ -45,13 +45,13 @@ appropriate conda environment:
 
 ```
 conda env create --file environment.yml
-``` 
+```
 
 And running through python: 
 
 ```
 python testTropCalc.py
-``` 
+```
 
 ### Results 
 
