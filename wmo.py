@@ -48,7 +48,7 @@ def wmo(pFull, TFull, lapseC=2.0*units("K/km"), height=False):
             kount = 0
             for L in range (iLev,nLevm):
                 if pHalf[L] > p2km:
-                    lapseAvg = lapseSum + lapse[L]
+                    lapseSum = lapseSum + lapse[L]
                     kount = kount + 1
                     lapseAvg = lapseSum/kount
             found = lapseAvg < lapseC
@@ -57,6 +57,7 @@ def wmo(pFull, TFull, lapseC=2.0*units("K/km"), height=False):
             else:
                 iTrop = iLev
                 pTrop = pMin if pTrop < pMin else pTrop
+                break
 
     if height:
         z = thickness_hydrostatic(pFull[0:iTrop],TFull[0:iTrop])
